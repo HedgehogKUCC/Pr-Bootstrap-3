@@ -113,3 +113,75 @@
 背景色比較亂時，就要 **自定義透明背景色** (`bg-lighter`) 來襯托出字 !
 
 同時加上 `p-3` 給它一個空間
+
+<br>
+
+## Card & Grid
+
+```html
+<!-- 主要商品列表 (Card) -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center h-100 border-0 box-shadow">
+            <img class="card-img-top" src="..." alt="...">
+            <div class="card-body">
+              <h4 class="card-title"> ... </h4>
+              <p class="card-text"> ... </p>
+            </div>
+            <div class="card-footer border-top-0 bg-white">
+              <div class="btn-group btn-group-sm">
+                <a href="#" class="btn btn-outline-secondary">SM</a>
+                <a href="#" class="btn btn-outline-secondary">M</a>
+                <a href="#" class="btn btn-outline-secondary disabled">L</a>
+                <a href="#" class="btn btn-outline-secondary">XL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+使用 [Card-deck](https://getbootstrap.com/docs/4.3/components/card/#card-decks) 會將所有卡片擠在同一列 !!!
+
+而使用 `card` 搭配 `Grid` 不會因為卡片數量變多就造成擠壓
+
+還是會維持三分之一的寬度來排列並且超過時就會換行
+
+`card` 在排版時還有一個特性就是 `card-body` 的空間會自動伸展
+
+所以當 `card-body` 內容不一致時，可以在每個 `card` 加上 `h-100` !
+
+<br>
+
+使用 [utilities](https://getbootstrap.com/docs/4.3/utilities/borders/) 來修改樣式
+
+`border-0` `border-top-0`
+
+<br>
+
+增加 `card` 陰影 `box-shadow`
+
+```scss
+.box-shadow {
+
+  // 水平, 垂直, 擴散, rgba來做透明 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+
+  // 加上漸變效果
+  transition: box-shadow .3s;
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .24);
+  }
+}
+```
+
+<br>
+
