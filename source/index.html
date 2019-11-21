@@ -8335,17 +8335,17 @@
     <div class="😟">
       <div class="😿">
         <!-- 左側選單 (List group) -->
-        <div class="😷😃 😌😈">
-          <a class="😸😃 😚😄 😾😂" data-toggle="list" href="#list-gold">
-            <i class=" " aria-hidden="true"></i> 金牌專賣店</a>
-          <a class="😸😃 😚😄" data-toggle="list" href="#list-gift">
-            <i class=" " aria-hidden="true"></i> 禮品區</a>
-          <a href="#" class="😸😃 😚😄 😨😂">
-            <i class=" " aria-hidden="true"></i> 影音商品</a>
-          <a href="#" class="😸😃 😚😄 😨😂">
-            <i class=" " aria-hidden="true"></i> 寵物專用</a>
-          <a href="#" class="😸😃 😚😄 😨😂">
-            <i class=" " aria-hidden="true"></i> 居家環境</a>
+        <div class="list-group sticky-top">
+          <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-gold">
+            <i class="fa fa-diamond" aria-hidden="true"></i> 金牌專賣店</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-gift">
+            <i class="fa fa-gift" aria-hidden="true"></i> 禮品區</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-film">
+            <i class="fa fa-film" aria-hidden="true"></i> 影音商品</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-paw">
+            <i class="fa fa-paw" aria-hidden="true"></i> 寵物專用</a>
+          <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1">
+            <i class="fa fa-home" aria-hidden="true"></i> 居家環境</a>
         </div>
       </div>
       <div class="🙅">
@@ -8362,11 +8362,11 @@
           </form>
         </div>
         <!-- 主要商品列表 (Card) -->
-        <div class="😡😃">
-          <div class="😢😃 😾😂" id="😀">
-            <div class="😟">
+        <div class="tab-content">
+          <div class="tab-pane active" id="list-gold">
+            <div class="row">
               <!-- 金牌 -->
-              <div class="🙀 😸😈">
+              <div class="col-md-4">
                 <div class="😱😃 😏😅 😴😎 😋😎 😖😈">
                   <img class="😿😃" src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" alt="Card image cap">
                   <div class="😲😃">
@@ -8492,10 +8492,10 @@
             </nav>
           </div>
 
-          <div class="😢😃" id="😁">
-            <div class="😟 😘😆">
+          <div class="tab-pane" id="list-gift">
+            <div class="row">
               <!-- 禮品 -->
-              <div class="🙀 😸😈">
+              <div class="col-md-4">
                 <div class="😱😃 😏😅 😴😎 😋😎 😖😈">
                   <img class="😿😃" src="https://images.unsplash.com/photo-1482173074468-5b323335debe?w=1350" alt="Card image cap">
                   <div class="😲😃">
@@ -8511,6 +8511,14 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="tab-pane" id="list-film">
+            影音商品
+          </div>
+
+          <div class="tab-pane" id="list-paw">
+            寵物專用
           </div>
         </div>
         <!-- tab-content end -->

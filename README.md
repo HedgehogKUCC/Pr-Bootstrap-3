@@ -185,3 +185,54 @@
 
 <br>
 
+## List-group
+
+[links-and-buttons](https://getbootstrap.com/docs/4.3/components/list-group/#links-and-buttons)
+
+[tabindex](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/tabindex)
+
+[sticky-top](https://getbootstrap.com/docs/4.3/utilities/position/#sticky-top) 畫面滾動時將會固定在上方
+
+[list-group Methods](https://getbootstrap.com/docs/4.3/components/list-group/#methods) 畫面的切換
+
+```html
+<!-- list-group Methods -->
+<a 
+  class="list-group-item list-group-item-action active" 
+  data-toggle="list" 
+  href="#list-gold"
+><i class="fa fa-diamond" aria-hidden="true"></i> 金牌專賣店</a>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="list-gold">
+    <div class="row">
+      <div class="col-md-4">
+        ...
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="list-gift">
+    ...
+  </div>
+  <div class="tab-pane" id="list-film">
+    ...
+  </div>
+  <div class="tab-pane" id="list-paw">
+    ...
+  </div>
+</div>
+```
+
+加上 
+
+- `data-toggle="list"` 
+- `href="#list-gold"`
+- `tab-content`
+- `tab-pane` 加上 ***active*** 預設頁面呈現
+
+小陷阱 : 
+
+加上 `href="#list-gold"` 請記得將 `href="#"` 刪除
+
+一個標籤裡面同一個屬性只能出現一次，出現第二次的話其中一個會失效 !!!
+
