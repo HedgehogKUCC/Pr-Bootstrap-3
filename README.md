@@ -70,3 +70,46 @@
 
 <br>
 
+## Jumbotron
+
+```html
+<div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+  <div class="container">
+    <div class="bg-lighter p-3">
+      <h1 class="display-3"> ... </h1>
+      <p class="lead"> ... </p>
+    </div>
+  </div>
+</div>
+```
+
+```scss
+.jumbotron-bg {
+
+  // 加入背景圖
+  background-image: url('...');
+
+  // 讓圖盡量完整呈現
+  background-size: cover;
+
+  // 定位圖的位置
+  background-position: center center;
+
+  // 最小高為 400px
+  min-height: 400px;
+}
+
+.bg-lighter {
+  background-color: rgba(255, 255, 255, .65);
+}
+```
+
+給予 `min-height: 400px;` 會讓 ***文字偏上*** 
+
+如果要往下移使用 `d-flex` `align-items-end`
+
+<br>
+
+背景色比較亂時，就要 **自定義透明背景色** (`bg-lighter`) 來襯托出字 !
+
+同時加上 `p-3` 給它一個空間
