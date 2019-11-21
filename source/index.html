@@ -9,6 +9,7 @@
     <title>六角西餐廳</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
     <style>
     @media print {
       *,
@@ -8273,46 +8274,47 @@
   <body>
   <!-- headers -->
   <nav class="😀 😯😃 😊😅">
-    <a class="😣😃" href="shoppingCart.html">
-      <i class="  😢😎" aria-hidden="true"></i>
+    <a class="😣😃" href="#">
+      <i class="fa fa-heart text-info" aria-hidden="true"></i>
       六角血拼賣賣
     </a>
     <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
-    <div class="😌😃 😢😉">
-      <button class="😡😂 😅😃 😲😎" data-toggle="dropdown" data-flip="false">
-        <i class="  😦😎 " aria-hidden="true"></i>
-        <span class="😁 🙋😃 😂😄">9</span>
-        <span class="😍😈">unread messages</span>
+    <div class="dropdown ml-auto">
+      <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+        <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+        <span class="badge badge-pill badge-danger">11</span>
       </button>
-      <div class="😍😃 😪😃 😉😉" style="min-width: 300px" data-offset="400">
-        <h6>已選擇商品</h6>
-        <table class="😂 😅😂">
-          <tbody>
-            <tr>
-              <td class="😀😅 😋😎">
-                <a href="#removeModal" class="😧😎" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
-                  <i class=" " aria-hidden="true"></i>
-                </a>
-              </td>
-              <td class="😀😅">金牌西裝</td>
-              <td class="😀😅">1 件</td>
-              <td class="😀😅 😊😎">$520</td>
-            </tr>
-            <tr>
-              <td class="😀😅 😋😎">
-                <a href="#removeModal" class="😧😎" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
-                  <i class=" " aria-hidden="true"></i>
-                </a>
-              </td>
-              <td class="😀😅">金牌女裝</td>
-              <td class="😀😅">1 件</td>
-              <td class="😀😅 😊😎">$480</td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="shoppingCart-checkout.html" class="😡😂 😿😂 😇😃">
-          <i class=" " aria-hidden="true"></i> 結帳去
-        </a>
+
+      <!-- Heads up! Dropdowns are positioned thanks to Popper.js (except when they are contained in a navbar) -->
+      <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+        <div class="px-4 py-3">
+          <h6>已選擇商品</h6>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌西裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌西裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$520</td>
+              </tr>
+              <tr>
+                <td class="align-middle text-center">
+                  <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="刪除 金牌女裝 1 件">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </a>
+                </td>
+                <td class="align-middle">金牌女裝</td>
+                <td class="align-middle">1 件</td>
+                <td class="align-middle text-right">$480</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary btn-block">結帳</a>
+        </div>
       </div>
     </div>
   </nav>

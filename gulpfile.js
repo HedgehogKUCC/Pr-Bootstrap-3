@@ -54,10 +54,7 @@ gulp.task('sass', function () {
   return gulp.src('./source/scss/**/*.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
-    .pipe($.sass({
-      outputStyle: 'expended',
-      includePaths: ['./node_modules/bootstrap/scss']
-    }).on('error', $.sass.logError))
+    .pipe($.sass().on('error', $.sass.logError))
     .pipe($.postcss( [autoprefixer()] ))  // 直接引入 autoprefixer
     .pipe($.if(options.env === 'production', $.cleanCss()))
     .pipe($.sourcemaps.write('.'))
