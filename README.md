@@ -236,3 +236,103 @@
 
 一個標籤裡面同一個屬性只能出現一次，出現第二次的話其中一個會失效 !!!
 
+<br>
+
+## 產品購買區塊製作
+
+電商會特別注意 `SEO`
+
+一個網頁只能有一個標籤 `<h1>...</h1>` 具有語意
+
+而 `class="h1"` 只是樣式大小沒有語意
+
+背景色移除可使用 `bg-transparent`
+
+將 `breadcrumb` 設為 `pl-0` 
+
+<hr>
+
+使用 `d-flex` 來排售價區塊
+
+售價靠齊右邊 `justify-content-end`
+
+文字對齊底部 `align-items-end`
+
+網路價 ***margin-left 自適應*** `ml-auto`
+
+`class="h3"` 會有 ***margin-bottom: .5rem;*** 所以要多加 `mb-0`
+
+```html
+<div class="d-flex justify-content-end align-items-end">
+  <del class="text-muted">售價 $1299</del>
+  <div class="h3 ml-auto text-danger mb-0">
+    <small>網路價 NT$</small>
+    <strong>520</strong>
+  </div>
+</div>
+```
+
+<br>
+
+上面這樣排版的好處是把下方程式碼註解後
+
+售價會自己靠齊右邊
+
+```html
+<div class="h3 ml-auto text-danger mb-0">
+  <small>網路價 NT$</small>
+  <strong>520</strong>
+</div>
+```
+
+<br>
+
+`btn-group` 中的小訣竅
+
+在 `btn` 加上
+
+```scss
+.btn.disabled {
+  pointer-events: none;
+}
+```
+
+可以避免發生點選 `disabled` 尺寸時 
+
+`radio` 都沒有選擇尺寸的狀態
+
+<br>
+
+要排出 `select` 和 `button` 並排
+
+可以使用 `input-group`
+
+```html
+<div class="input-group mt-3">
+  <select name="" class="form-control mr-1" id="">
+    <option value="1">1 件</option>
+    <option value="2">2 件</option>
+    <option value="3">3 件</option>
+  </select>
+  <a href="#" class="btn btn-primary">
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i> 加入購物車
+  </a>
+</div>
+```
+
+<br>
+
+將區塊放入 `.sticky-top` 裡面
+
+讓用戶滑動網頁時都能固定在上方
+
+並在上方預留空間 `top: 10px`
+
+```html
+<div class="sticky-top" style="top: 10px;">
+  ...
+</div>
+```
+
+<br>
+
