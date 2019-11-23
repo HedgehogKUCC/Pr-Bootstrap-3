@@ -375,3 +375,22 @@
   border-radius: 50px;
 }
 ```
+
+<br>
+
+## 收合購物車
+
+使用 [collapse](https://getbootstrap.com/docs/4.3/components/collapse/#accordion-example) 來做到折疊效果
+
+對於使用在手機上非常方便
+
+可以將資訊隱藏起來
+
+需要看的時候再點開
+
+記得將 `<div id="collapseOne" ...>` 移出至 `<card>` 外面
+
+如果不一開始呈現出來 `class="collapse show"` 請把 `show` 刪除
+
+<br>
+
