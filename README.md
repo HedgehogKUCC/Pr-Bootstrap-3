@@ -336,3 +336,42 @@
 
 <br>
 
+## 使用 alert 元件 製作多步驟提示
+
+`form-row` 會讓間距變小一點
+
+`col-12` 在 576px 以 ***下*** 呈現滿版
+
+`col-sm` 在 576px 以 ***上*** 自適應欄位
+
+`alert-rounded` 將方框設定為圓邊
+
+```html
+<!-- 輸入資料頁 -->
+<div class="container main-content py-5">
+  <h1 class="text-center mb-3 text-secondary">六角血拼 結帳</h1>
+  <div class="form-row text-center">
+    <div class="col-12 col-sm">
+      <div class="alert alert-primary alert-rounded" role="alert">
+        1.輸入訂單資料
+      </div>
+    </div>
+    <div class="col-12 col-sm">
+      <div class="alert alert-light alert-rounded" role="alert">
+        2.金流付款
+      </div>
+    </div>
+    <div class="col-12 col-sm">
+      <div class="alert alert-light alert-rounded" role="alert">
+        3.完成
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+```scss
+.alert-rounded {
+  border-radius: 50px;
+}
+```
